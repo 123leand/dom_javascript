@@ -1,14 +1,16 @@
 var entrada = document.getElementById("entrada");
 
-var botaoEnviar = document.getElementById("enviar");
-
 var saida = document.getElementById("saida");
 
-function copiarEntrada(){
+var botEnviar = document.getElementById("enviar");
 
-    saida.textContent = entrada.value;    
+
+
+function copiarEntrada() {
+
+	saida.textContent = entrada.value;
+
 }
 
 
-botaoEnviar.addEventListener("clique", copiarEntrada);
-
+botEnviar.addEventListener("click", copiarEntrada);
